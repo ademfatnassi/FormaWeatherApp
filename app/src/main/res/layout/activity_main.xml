@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ColorBg"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_marginVertical="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:background="@color/ColorWhite"
+            android:hint="@string/search_box_hint"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginVertical="10dp"
+            android:background="#fff"
+            android:contentDescription="@string/search_icon"
+            android:src="@drawable/ic_baseline_search_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+    <ImageView
+        android:id="@+id/ic_weather"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:src="@drawable/doubt"
+        android:contentDescription="@string/weather_icon_description" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:text="@string/xx_c"
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/ColorBlack"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="@string/description"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/ColorBlack"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="@string/ville"
+        android:textSize="30sp"
+        android:textColor="@color/ColorBlack"
+        />
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:text="@string/humidity"
+        android:textSize="20sp"
+        android:textColor="@color/ColorBlack"
+        android:drawableStart="@drawable/ic_monstr_weather"
+        />
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:text="@string/pressure"
+        android:textSize="20sp"
+        android:textColor="@color/ColorBlack"
+        android:drawableStart="@drawable/ic_atmospheric_pressure_16"
+        />
+
+</LinearLayout>

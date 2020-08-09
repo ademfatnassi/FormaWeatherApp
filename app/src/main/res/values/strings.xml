@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FormaWeatherApp</string>
+    <string name="search_box_hint">Rechercher des villes</string>
+    <string name="weather_icon_description">Weather icon</string>
+    <string name="xx_c">N/A °C</string>
+    <string name="ville">N/A, N/A</string>
+    <string name="humidity"> " "N/A %</string>
+    <string name="pressure"> "   "N/A %</string>
+    <string name="search_icon">search icon</string>
+    <string name="description">N/A</string>
+</resources>
